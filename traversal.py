@@ -27,6 +27,11 @@ def depthFirstPrint(graph, source):
     for i in graph[curr]: 
       stack.append(i)
 
+def DFSRec(graph, source): 
+  print(source)
+  for node in graph[source]: 
+    DFSRec(graph, node)
+
 def breadthFirstPrint(graph, source): 
   stack = [source]
   while len(stack) > 0: 
@@ -36,6 +41,9 @@ def breadthFirstPrint(graph, source):
     for i in graph[curr]: 
       stack.append(i)
 
+print("DFS itter")
 depthFirstPrint(graph, 'a')
-
+print("DFS rec")
+DFSRec(graph, 'a')
+print("BFS")
 breadthFirstPrint(graph, 'a')
