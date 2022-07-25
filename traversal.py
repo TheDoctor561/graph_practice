@@ -41,9 +41,9 @@ def breadthFirstPrint(graph, source):
     for i in graph[curr]: 
       stack.append(i)
 
-print("DFS itter")
-depthFirstPrint(graph, 'a')
-print("DFS rec")
-DFSRec(graph, 'a')
-print("BFS")
-breadthFirstPrint(graph, 'a')
+# print("DFS itter")
+# depthFirstPrint(graph, 'a')
+# print("DFS rec")
+# DFSRec(graph, 'a')
+# print("BFS")
+# breadthFirstPrint(graph, 'a')
